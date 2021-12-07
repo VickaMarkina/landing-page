@@ -1,0 +1,107 @@
+.header {
+  &-navbar {
+    @include lg-min {
+      padding: 15px 0;
+    }
+    @include lg {
+      padding: 8px 0;
+    }
+
+    &--scrolled {
+      background-color: rgba(1, 1, 1, 0.85);
+
+      @include lg-min {
+        padding: 0 !important;
+      }
+
+      .nav-item.active {
+        .nav-link {
+          color: $color-accent;
+          font-weight: 600;
+          &::after {
+            height: 3px;
+            content: "";
+            background-color: $color-accent;
+            position: absolute;
+            opacity: 1;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+
+            @include lg-md {
+              bottom: 4px;
+              left: -160%;
+              width: 338px;
+            }
+            @include md {
+              bottom: 4px;
+              left: -106%;
+              width: 248px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-navbar {
+  @include lg {
+    background-color: rgba(1, 1, 1, 0.85);
+  }
+
+  .container {
+    @include lg-sm {
+      padding: 0 15px;
+    }
+    @include sm {
+      padding: 0 16px;
+    }
+  }
+}
+
+.nav-item {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  line-height: 24px;
+
+  &:not(.active):hover {
+    .nav-link::after {
+      height: 3px;
+      opacity: 1;
+      transition: bottom 0.5s, opacity 0.5s;
+      bottom: 10px;
+    }
+  }
+
+  .nav-link {
+    color: $color-light;
+    font-weight: 400;
+    padding: 15px 7.5px;
+    font-family: $font-main;
+    position: relative;
+
+    @include lg {
+      padding: 8px 7.5px;
+    }
+
+    &::after {
+      content: "";
+      background-color: $color-light;
+      position: absolute;
+      opacity: 0;
+      bottom: 0;
+      height: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.nav {
+  @include lg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

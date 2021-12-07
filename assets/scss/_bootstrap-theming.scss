@@ -1,0 +1,11 @@
+.navbar-brand {
+  font-family: $font-main;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: rgba(254, 254, 254, 0.75);
+}
+
+button:focus {
+  outline: white;
+}

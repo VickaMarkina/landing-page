@@ -1,0 +1,23 @@
+.carousel-item {
+  background-size: cover;
+  position: relative;
+  background-position: 50% 50%;
+
+  .carousel-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  h5 {
+    font-size: 28px;
+    font-family: $font-header;
+  }
+
+  p {
+    line-height: 24px;
+    font-family: $font-main;
+  }
+}
