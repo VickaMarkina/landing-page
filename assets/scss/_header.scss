@@ -24,6 +24,7 @@
             background-color: $color-accent;
             position: absolute;
             opacity: 1;
+            bottom: 10px;
 
             @include lg {
               bottom: 4px;
@@ -53,19 +54,22 @@
 }
 
 .nav-item {
-  width: 100%;
-  text-align: center;
   padding-left: 7.5px;
   padding-right: 7.5px;
   line-height: 24px;
-
-  &:not(.active):hover {
-    .nav-link::after {
-      height: 3px;
-      opacity: 1;
-      transition: bottom 0.5s, opacity 0.5s;
-      bottom: 10px;
+  @include lg-min {
+    &:not(.active):hover {
+      .nav-link::after {
+        height: 3px;
+        opacity: 1;
+        transition: bottom 0.5s, opacity 0.5s;
+        bottom: 10px;
+      }
     }
+  }
+  @include lg {
+    width: 100%;
+    text-align: center;
   }
 
   .nav-link {
