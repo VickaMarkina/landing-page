@@ -24,19 +24,11 @@
             background-color: $color-accent;
             position: absolute;
             opacity: 1;
-            bottom: 10px;
-            left: 0;
-            width: 100%;
 
-            @include lg-md {
+            @include lg {
               bottom: 4px;
-              left: -160%;
-              width: 338px;
-            }
-            @include md {
-              bottom: 4px;
-              left: -106%;
-              width: 248px;
+              left: 25%;
+              width: 50%;
             }
           }
         }
@@ -61,6 +53,8 @@
 }
 
 .nav-item {
+  width: 100%;
+  text-align: center;
   padding-left: 7.5px;
   padding-right: 7.5px;
   line-height: 24px;
@@ -100,7 +94,6 @@
 
 .nav {
   @include lg {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }

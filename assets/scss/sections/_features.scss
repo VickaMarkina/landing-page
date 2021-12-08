@@ -1,0 +1,35 @@
+.features {
+  background-color: $color-light-gray;
+}
+
+.feature {
+  margin-bottom: 7.5px;
+  padding-top: 7.5px;
+  text-align: center;
+
+  &__text {
+    color: $color-gray;
+  }
+
+  &__img {
+    color: #ffffff;
+    background: #ee3b24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+    @include md-min {
+      width: 80px;
+      height: 90px;
+      font-size: 32px;
+      margin: 30px auto 60px;
+    }
+    @include md {
+      width: 68px;
+      height: 76.5px;
+      font-size: 24px;
+      margin: 25.5px auto 51px;
+    }
+  }
+}

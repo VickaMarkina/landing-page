@@ -1,47 +1,7 @@
 .about {
-  min-height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-
-  @include lg-min {
-    padding-top: 105px;
-    padding-bottom: 90px;
-  }
-  @include lg-md {
-    padding-top: 105px;
-    padding-bottom: 75px;
-  }
-  @include md-sm {
-    padding-top: 90px;
-    padding-bottom: 60px;
-  }
-  @include sm {
-    padding-top: 90px;
-    padding-bottom: 45px;
-  }
-
   .row {
     margin-right: -15px;
     margin-left: -15px;
-  }
-
-  &-title {
-    text-align: center;
-    font-family: $font-header;
-
-    @include lg-min {
-      margin: 0 0 45px 0;
-    }
-    @include lg-md {
-      margin: 0 0 38px 0;
-    }
-    @include md-sm {
-      margin: 0 0 30px 0;
-    }
-    @include sm {
-      margin: 0 0 23px 0;
-    }
   }
 
   &-text {
@@ -54,7 +14,6 @@
       margin-bottom: 30px;
 
       h5 {
-        font-family: $font-header;
         font-size: 18px;
       }
     }
