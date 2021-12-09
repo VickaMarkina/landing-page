@@ -29,9 +29,9 @@ a:hover {
 
 .about,
 .features,
-.advantes-content,
+.advantages-content,
 .blog,
-.contact,
+.contacts,
 .gallery {
   min-height: 100vh;
   display: flex;
@@ -93,4 +93,20 @@ a:hover {
   @include md {
     margin-bottom: 30px;
   }
+}
+
+.btn-outline-danger {
+  color: $color-accent !important;
+  border-color: $color-accent !important;
+  &:hover {
+    color: #fff;
+    background-color: $color-accent !important;
+    border-color: $color-accent !important;
+  }
+}
+
+input::placeholder,
+textarea::placeholder,
+.btn {
+  font-family: $font-main !important;
 }

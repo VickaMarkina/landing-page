@@ -1,0 +1,83 @@
+.footer {
+  font-size: 14px;
+  font-family: $font-main;
+
+  a {
+    color: #b2b2b2;
+
+    &:hover {
+      color: $color-light;
+    }
+  }
+
+  &__top {
+    padding-top: 45px;
+    padding-bottom: 30px;
+    background-color: #282828;
+
+    h3 {
+      color: #cbcbcb;
+
+      &::first-letter {
+        color: $color-accent;
+      }
+    }
+
+    p {
+      color: #b2b2b2;
+    }
+
+    ul {
+      padding-left: 30px;
+      list-style: none;
+    }
+
+    li {
+      position: relative;
+
+      &::before {
+        content: "\f30b";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        margin-left: -30px;
+        color: #b2b2b2;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 30px 0 30px 0;
+    background-color: #343434;
+
+    .backtop {
+      position: fixed;
+      right: 15px;
+      bottom: 15px;
+      width: 45px;
+      height: 45px;
+      background-color: $color-dark;
+      border-radius: 4px;
+      border-bottom: none;
+      opacity: 0.2;
+      transition: opacity 0.4s;
+
+      i {
+        color: $color-light;
+        font-size: 16px;
+        position: relative;
+        top: 15px;
+        margin: 0;
+        transition: top 0.4s;
+      }
+
+      &:hover {
+        opacity: 1;
+
+        i {
+          top: 5px;
+        }
+      }
+    }
+  }
+}

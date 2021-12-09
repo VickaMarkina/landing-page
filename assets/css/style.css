@@ -84,9 +84,9 @@ a:hover {
 
 .about,
 .features,
-.advantes-content,
+.advantages-content,
 .blog,
-.contact,
+.contacts,
 .gallery {
   min-height: 100vh;
   display: -webkit-box;
@@ -115,6 +115,38 @@ a:hover {
   text-align: center;
   color: #545454;
   font-family: "Roboto", sans-serif;
+}
+
+.btn-outline-danger {
+  color: #ee3b24 !important;
+  border-color: #ee3b24 !important;
+}
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: #ee3b24 !important;
+  border-color: #ee3b24 !important;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif !important;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-family: "Roboto", sans-serif !important;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif !important;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif !important;
+}
+
+input::placeholder,
+textarea::placeholder,
+.btn {
+  font-family: "Roboto", sans-serif !important;
 }
 
 .carousel-item {
@@ -320,12 +352,116 @@ a:hover {
   -o-transition: color 0.5s;
   transition: color 0.5s;
 }
+
+.advantages {
+  background-color: #d8d8d8;
+}
+.advantages-img {
+  background-size: cover;
+  background-position: 33% 50%;
+  min-height: 100vh;
+}
+
+.advantage-item__img {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+.advantage-item__img i {
+  color: #ee3b24;
+  text-align: center;
+  margin-top: 7.5px;
+}
+.advantage-item__caption {
+  padding-bottom: 15px;
+}
+.advantage-item__text {
+  color: #545454;
+}
+
+.footer {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+.footer a {
+  color: #b2b2b2;
+}
+.footer a:hover {
+  color: #fefefe;
+}
+.footer__top {
+  padding-top: 45px;
+  padding-bottom: 30px;
+  background-color: #282828;
+}
+.footer__top h3 {
+  color: #cbcbcb;
+}
+.footer__top h3::first-letter {
+  color: #ee3b24;
+}
+.footer__top p {
+  color: #b2b2b2;
+}
+.footer__top ul {
+  padding-left: 30px;
+  list-style: none;
+}
+.footer__top li {
+  position: relative;
+}
+.footer__top li::before {
+  content: "\f30b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  margin-left: -30px;
+  color: #b2b2b2;
+}
+.footer__bottom {
+  padding: 30px 0 30px 0;
+  background-color: #343434;
+}
+.footer__bottom .backtop {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 45px;
+  height: 45px;
+  background-color: #010101;
+  border-radius: 4px;
+  border-bottom: none;
+  opacity: 0.2;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+.footer__bottom .backtop i {
+  color: #fefefe;
+  font-size: 16px;
+  position: relative;
+  top: 15px;
+  margin: 0;
+  -webkit-transition: top 0.4s;
+  -o-transition: top 0.4s;
+  transition: top 0.4s;
+}
+.footer__bottom .backtop:hover {
+  opacity: 1;
+}
+.footer__bottom .backtop:hover i {
+  top: 5px;
+}
 @media (min-width: 576px) {
   .gallery-item {
     padding: 0px 5px 10px 5px;
   }
   .gallery .container-fluid {
     padding: 0px 30px;
+  }
+  .advantage-item__img i {
+    width: 60px;
+    font-size: 44px;
   }
 }
 @media (min-width: 768px) {
@@ -363,9 +499,9 @@ a:hover {
   }
   .about,
 .features,
-.advantes-content,
+.advantages-content,
 .blog,
-.contact,
+.contacts,
 .gallery {
     padding-top: 105px;
     padding-bottom: 90px;
@@ -380,6 +516,18 @@ a:hover {
   }
   .about .progress {
     height: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages-content > .row {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+@media (max-width: 1199.8px) and (min-width: 992px) {
+  .advantages-content > .row {
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 @media (max-width: 991.8px) {
@@ -413,6 +561,9 @@ a:hover {
   .about .progress {
     height: 16px;
   }
+  .advantages-img {
+    display: none;
+  }
 }
 @media (max-width: 991.8px) and (min-width: 576px) {
   .header-navbar .container {
@@ -422,9 +573,9 @@ a:hover {
 @media (max-width: 991.8px) and (min-width: 768px) {
   .about,
 .features,
-.advantes-content,
+.advantages-content,
 .blog,
-.contact,
+.contacts,
 .gallery {
     padding-top: 105px;
     padding-bottom: 75px;
@@ -436,6 +587,9 @@ a:hover {
 .advantages-title,
 .contacts-title {
     margin: 0 0 38px 0;
+  }
+  .advantages .container-fluid {
+    max-width: 720px;
   }
 }
 @media (max-width: 767.8px) {
@@ -463,9 +617,9 @@ a:hover {
 @media (max-width: 767.8px) and (min-width: 576px) {
   .about,
 .features,
-.advantes-content,
+.advantages-content,
 .blog,
-.contact,
+.contacts,
 .gallery {
     padding-top: 90px;
     padding-bottom: 60px;
@@ -478,6 +632,9 @@ a:hover {
 .contacts-title {
     margin: 0 0 30px 0;
   }
+  .advantages .container-fluid {
+    max-width: 540px;
+  }
 }
 @media (max-width: 575.8px) {
   .header-navbar .container {
@@ -485,9 +642,9 @@ a:hover {
   }
   .about,
 .features,
-.advantes-content,
+.advantages-content,
 .blog,
-.contact,
+.contacts,
 .gallery {
     padding-top: 90px;
     padding-bottom: 45px;
@@ -502,5 +659,9 @@ a:hover {
   }
   .gallery-item {
     padding: 0px 15px 15px 15px;
+  }
+  .advantage-item__img i {
+    width: 35px;
+    font-size: 32px;
   }
 }
