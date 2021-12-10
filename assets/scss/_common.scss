@@ -3,6 +3,7 @@ html {
   font-family: $font-main;
   color: $color-gray;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {
