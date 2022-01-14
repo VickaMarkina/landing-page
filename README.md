@@ -1,1 +1,1 @@
-Pages https://vickamarkina.github.io/landing-page/
+Pages: https://vickamarkina.github.io/landing-page/
